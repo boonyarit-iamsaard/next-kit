@@ -4,10 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3000",
     "build": "next build",
-    "start": "next start",
+    "clean": "git clean -xdf .cache .turbo .next node_modules",
+    "dev": "next dev --turbopack --port 3000",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint",
+    "start": "next start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -18,11 +20,13 @@
   },
   "devDependencies": {
     "@next-kit/eslint-config": "workspace:*",
+    "@next-kit/prettier-config": "workspace:*",
     "@next-kit/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:react-19",
     "@types/react-dom": "catalog:react-19",
     "eslint": "catalog:",
     "typescript": "catalog:"
-  }
+  },
+  "prettier": "@next-kit/prettier-config"
 }

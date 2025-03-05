@@ -3,16 +3,22 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "clean": "git clean -xdf .turbo node_modules",
+    "clean:workspaces": "turbo run clean",
     "dev": "turbo run dev",
+    "format": "turbo run format --continue -- --cache --cache-location .cache/.prettiercache",
+    "format:fix": "turbo run format --continue -- --write --cache --cache-location .cache/.prettiercache",
     "lint": "turbo run lint --continue -- --cache --cache-location .cache/.eslintcache",
     "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location .cache/.eslintcache",
     "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
+    "@next-kit/prettier-config": "workspace:*",
     "prettier": "catalog:",
     "turbo": "^2.4.4",
     "typescript": "catalog:"
   },
+  "prettier": "@next-kit/prettier-config",
   "engines": {
     "node": ">=18"
   },

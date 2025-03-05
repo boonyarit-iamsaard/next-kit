@@ -7,12 +7,15 @@
   },
   "scripts": {
     "build": "tsc",
+    "clean": "git clean -xdf .cache .turbo node_modules",
     "dev": "tsc",
+    "format": "prettier --write . --ignore-path ../../.gitignore",
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
     "@next-kit/eslint-config": "workspace:*",
+    "@next-kit/prettier-config": "workspace:*",
     "@next-kit/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:react-19",
@@ -23,5 +26,6 @@
   "dependencies": {
     "react": "catalog:react-19",
     "react-dom": "catalog:react-19"
-  }
+  },
+  "prettier": "@next-kit/prettier-config"
 }

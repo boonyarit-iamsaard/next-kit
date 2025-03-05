@@ -9,11 +9,14 @@
     "./react": "./react.js"
   },
   "scripts": {
+    "clean": "git clean -xdf .cache .turbo node_modules",
+    "format": "prettier --write . --ignore-path ../../.gitignore",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.7",
     "@eslint/js": "^9.21.0",
+    "@next-kit/prettier-config": "workspace:*",
     "@next-kit/typescript-config": "workspace:*",
     "@next/eslint-plugin-next": "^15.2.1",
     "@types/node": "catalog:",
@@ -28,5 +31,6 @@
     "globals": "^16.0.0",
     "typescript": "catalog:",
     "typescript-eslint": "^8.26.0"
-  }
+  },
+  "prettier": "@next-kit/prettier-config"
 }
