@@ -1,5 +1,5 @@
 {
-  "extends": "@next-solution/typescript-config/react-library.json",
+  "extends": "@next-kit/typescript-config/react-library.json",
   "compilerOptions": {
     "outDir": "dist"
   },

@@ -1,5 +1,5 @@
 {
-  "name": "@next-solution/eslint-config",
+  "name": "@next-kit/eslint-config",
   "version": "0.0.0",
   "type": "module",
   "private": true,

@@ -11,14 +11,14 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
-    "@next-solution/ui": "workspace:*",
+    "@next-kit/ui": "workspace:*",
     "next": "catalog:next-15",
     "react": "catalog:react-19",
     "react-dom": "catalog:react-19"
   },
   "devDependencies": {
-    "@next-solution/eslint-config": "workspace:*",
-    "@next-solution/typescript-config": "workspace:*",
+    "@next-kit/eslint-config": "workspace:*",
+    "@next-kit/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:react-19",
     "@types/react-dom": "catalog:react-19",
