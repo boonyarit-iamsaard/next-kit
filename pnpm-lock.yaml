@@ -20,7 +20,7 @@ importers:
 
   apps/web:
     dependencies:
-      '@repo/ui':
+      '@next-solution/ui':
         specifier: workspace:*
         version: link:../../packages/ui
       next:
@@ -33,10 +33,10 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@next-solution/eslint-config':
         specifier: workspace:*
         version: link:../../tools/eslint
-      '@repo/typescript-config':
+      '@next-solution/typescript-config':
         specifier: workspace:*
         version: link:../../tools/typescript
       '@types/node':
@@ -64,10 +64,10 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
     devDependencies:
-      '@repo/eslint-config':
+      '@next-solution/eslint-config':
         specifier: workspace:*
         version: link:../../tools/eslint
-      '@repo/typescript-config':
+      '@next-solution/typescript-config':
         specifier: workspace:*
         version: link:../../tools/typescript
       '@turbo/gen':
