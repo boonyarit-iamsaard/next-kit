@@ -6,14 +6,14 @@
     "./*": "./src/*.tsx"
   },
   "scripts": {
-    "lint": "eslint . --max-warnings 0",
-    "generate:component": "turbo gen react-component",
-    "check-types": "tsc --noEmit"
+    "build": "tsc",
+    "dev": "tsc",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "devDependencies": {
     "@next-kit/eslint-config": "workspace:*",
     "@next-kit/typescript-config": "workspace:*",
-    "@turbo/gen": "^2.4.4",
     "@types/node": "catalog:",
     "@types/react": "catalog:react-19",
     "@types/react-dom": "catalog:react-19",
