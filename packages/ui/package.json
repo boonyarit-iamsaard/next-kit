@@ -13,6 +13,10 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
+  "dependencies": {
+    "react": "catalog:react-19",
+    "react-dom": "catalog:react-19"
+  },
   "devDependencies": {
     "@next-kit/eslint-config": "workspace:*",
     "@next-kit/prettier-config": "workspace:*",
@@ -22,10 +26,6 @@
     "@types/react-dom": "catalog:react-19",
     "eslint": "catalog:",
     "typescript": "catalog:"
-  },
-  "dependencies": {
-    "react": "catalog:react-19",
-    "react-dom": "catalog:react-19"
   },
   "prettier": "@next-kit/prettier-config"
 }

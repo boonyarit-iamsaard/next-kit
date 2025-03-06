@@ -21,6 +21,7 @@
   "devDependencies": {
     "@next-kit/eslint-config": "workspace:*",
     "@next-kit/prettier-config": "workspace:*",
+    "@next-kit/tailwind-config": "workspace:*",
     "@next-kit/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:react-19",
